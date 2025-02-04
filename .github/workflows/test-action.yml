@@ -1,0 +1,17 @@
+name: Test Workflow
+
+on: 
+  push:
+    branches:
+      - main  # Runs on push to main branch
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: pradhuman.mahor@gramener.com
+        run: echo "Hello, world!"
